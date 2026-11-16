@@ -23,7 +23,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .im{position:relative;aspect-ratio:4/3;background:linear-gradient(135deg,var(--g),#1d6446);overflow:hidden}.im img{width:100%;height:100%;object-fit:cover}.ic{position:absolute;left:1rem;bottom:-1.3rem;width:52px;height:52px;border-radius:50%;background:var(--a);display:grid;place-items:center;font-size:1.5rem;border:3px solid #fff}
 .cb{padding:2rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.7rem;flex:1}.cb h3{font-size:1.15rem;margin:0}.cb p{margin:0;flex:1;color:#666}.cb .btn{align-self:flex-start}.mr{text-align:center;margin:2.5rem 0 0}
 .ab2{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}.ai{position:relative}.ai img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--g)}.bg{position:absolute;right:-1rem;bottom:-1rem;background:var(--a);color:var(--ink);font:800 1rem Archivo;padding:1rem 1.3rem}
-.ck{list-style:none;padding:0;margin:0 0 1.5rem}.ck li{padding:.35rem 0 .35rem 1.9rem;position:relative}.ck li:before{content:"✓";position:absolute;left:0;color:var(--ad);font-weight:900}.ck.two{columns:2;gap:1.5rem}
+.ck{list-style:none;padding:0;margin:0 0 1.5rem}.ck li{padding:.35rem 0 .35rem 1.9rem;position:relative}.ck li:before{content:"\f00c";font-family:"Font Awesome 6 Free";position:absolute;left:0;color:var(--ad);font-weight:900}.ck.two{columns:2;gap:1.5rem}
 .tm{text-align:center;padding:1.6rem;background:#fff;border:1px solid var(--line)}.tm h3{font-size:1.05rem}.tm p{margin:0;color:#666;font-size:.95rem}.av{width:80px;height:80px;border-radius:50%;background:var(--ink);color:var(--a);display:grid;place-items:center;font:800 1.4rem Archivo;margin:0 auto 1rem;border:3px solid var(--a)}
 .pb{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),var(--bg) center/cover,var(--g);color:#fff;padding:4.5rem 1rem;text-align:center}.pb h1{font-size:clamp(2rem,5vw,3.2rem);color:#fff}.pb p{margin:0 auto;max-width:40em;color:#e8e8e8}.crumb{font-size:.9rem;color:var(--a)}.crumb a{text-decoration:none}
 .det{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:start}.det h2{font-size:1.9rem}.sd{display:grid;gap:1.2rem}.im2{aspect-ratio:4/3;background:linear-gradient(135deg,var(--g),#1d6446);overflow:hidden}.im2 img{width:100%;height:100%;object-fit:cover}
@@ -113,3 +113,13 @@ footer a{display:block;text-decoration:none;padding:.2rem 0}footer a:hover{color
 .ghero{background-size:cover;background-position:center;text-align:center;padding:5.5rem 1rem;min-height:300px;display:flex;align-items:center}.ghero .in{width:100%}.ghero h1{font-size:clamp(2.2rem,5.5vw,3.6rem);color:#fff;margin-bottom:.4em}.ghero p{margin:0 auto;max-width:40em;color:#eee;font-size:1.1rem}
 .gfoot button.gm{background:none;border:0;padding:0;font:800 .9rem "Nunito Sans";color:#b36a12;cursor:pointer;margin-left:auto}.gfoot button.gm:hover{color:var(--a)}
 .gsec{padding-top:3.5rem}
+
+/* v10 icons + whatsapp */
+.top i{color:var(--a);margin-right:.3rem}.gfoot i,.ci i,.phs i,.cc i.fa-phone{margin-right:.2rem}
+.ic,.ic2,.ico{color:var(--ink)}.pn{color:var(--a)}.vi{color:var(--a)}.ph{color:#fff}.hb .phs i{color:var(--ad)}.cpn .btn i{margin-right:.3rem}
+.ar i,.sa i{font-size:1.1rem}.strip i{color:var(--ink)}
+.wa-float{position:fixed;right:1.2rem;bottom:1.2rem;z-index:40;display:flex;align-items:center;gap:.6rem;background:#25d366;color:#fff;text-decoration:none;font:800 .95rem "Nunito Sans";height:60px;min-width:60px;padding:0 1.1rem 0 0;border-radius:30px;box-shadow:0 6px 20px rgba(0,0,0,.3);animation:wap 2.4s infinite}
+.wa-float i{width:60px;height:60px;display:grid;place-items:center;font-size:2rem;flex:none}.wa-float span{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .4s}.wa-float:hover span,.wa-float:focus-visible span{max-width:10em}.wa-float:hover{background:#1ebe5a}
+@keyframes wap{0%{box-shadow:0 6px 20px rgba(0,0,0,.3),0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 6px 20px rgba(0,0,0,.3),0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 6px 20px rgba(0,0,0,.3),0 0 0 0 rgba(37,211,102,0)}}
+@media(max-width:640px){.wa-float{right:.8rem;bottom:.8rem;height:54px;min-width:54px;padding:0;border-radius:50%}.wa-float i{width:54px;height:54px}.wa-float span{display:none}}
+@media(prefers-reduced-motion:reduce){.wa-float{animation:none}}
